@@ -42,8 +42,21 @@
     </div>
 
     <!-- header part end  -->
-
-
+   <div class="faisal-container">
+    <div class="faisa">
+        <div class="ahmd">
+          <button class="ripon active" data-ripu="wat">Wat?</button>
+          <button class="ripon" data-ripu="voor-wie">Voor wie?</button>
+          <button class="ripon" data-ripu="klanten">Klanten</button>
+        </div>
+        <div class="shuvo" id="shuvo">
+          <!-- Content will be loaded here -->
+        </div>
+        <div class="badhan">
+          <img src="images/BigBoom_star 1.png" alt="Star Graphic" />
+        </div>
+      </div>
+    </div>
 
 
 
@@ -79,7 +92,48 @@
       </p>
     </div>
   </footer>
-<!-- footer part end  -->    
+<!-- footer part end  --> 
+ 
+<script>
+  const contentData = {
+  "wat": `
+    <h2>Wat?</h2>
+    <p class="p">Ik werkte reeds freelance of rechtstreeks voor bedrijven, voor zowel privé als overheid. Voor KMO of multi-national. Ik werk voor éénmansaken, BVBA’s, instellingen & niet-gouvernementele organisaties en met NGO’s. Ik praat even graag rechtstreeks met jou als met je marketingafdeling, je communicatie-verantwoordelijke of projectmanager. Dat kan voor een klein of een groot project zijn, een éénmalige actie of over een langere periode zijn. Heb je tijdelijk nood aan ondersteuning in je team of je afdeling, geef gerust een seintje! <br><br>
+
+<span style="color: #484847; font-size: 18px; font-weight: bold;" ><b>Ik werkte in het verleden al voor deze bedrijven</b></span> <br>
+<span style="color: #484847; font-weight: 400;">Helan, Volvo Trucks, Multipharma, de Vlaamse Overheid, HoGent, De Krook, Equans, Cultuurhuis Stroming, MOS Scholengroep, Duurzaam Educatiepunt, Nexxworks, Gemeente Berlare, Tribu, MM Montage, Artes, Dieteren, Nottebohm medisch centrum, Carevolution, Studio Verne, Dens Communicatie, Festivaria’s De Klokkenluider van de Notre-Dame, Dranken Vercruyssen, Inezz Productions, Partena Ziekenfonds, Hoog Commissariaat voor de Vluchtelingen, Trento Sint-Jozef, Vendis Capital, Octavio, Meubelen De Sutter, Unilin, Lunchgarden, Enfocus Software, Ghent PDF Workgroup, Four Pees…
+</span><br><br>
+<span style="color:#484847; font-weight: 400;">Bel gerust! <u>0485 50 39 18</u> of mail <u>tim@bigboom.be.</u><br>
+Ik kijk er al naar uit om je te ontmoeten.</span></p>
+  `,
+  "voor-wie": `
+    <h2>Voor wie?</h2>
+    <p>Voor KMO of multi-national. Ik werk voor éénmanszaken, BVBA's, instellingen & NGO's...</p>
+  `,
+  "klanten": `
+    <h2>Klanten</h2>
+    <p><strong>Ik werkte in het verleden al voor deze bedrijven:</strong> Helan, Volvo Trucks, Multipharma, Vlaamse Overheid, HoGent...</p>
+    <p>Bel gerust! 0485 50 39 18 of mail <a href="mailto:tim@bigboom.be">tim@bigboom.be</a>.</p>
+  `
+};
+
+const buttons = document.querySelectorAll(".ripon");
+const content = document.getElementById("shuvo");
+
+buttons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelector(".ripon.active").classList.remove("active");
+    btn.classList.add("active");
+
+    const tab = btn.getAttribute("data-ripu");
+    content.innerHTML = contentData[tab];
+  });
+});
+
+// Load initial tab content
+content.innerHTML = contentData["wat"];
+
+</script>
 
 </body>
 </html>

@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    /* font-family: Arial, sans-serif; */
+  }
+  .faisal-container{
+    background: #E9E8E8;
+  }
+  .faisa {
+    width: 1300px;
+    display: flex;
+    /* min-height: 100vh; */
+    margin: 0 auto;
+    padding: 80px;
+}
+  
+.ahmd {
+    /* background: #f0f0f0; */
+    padding: 20px;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+  .ripon {
+    padding: 10px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .ripon.active {
+    background-color: black;
+    color: white;
+  }
+  
+  .shuvo {
+    flex: 1;
+    padding: 40px;
+    /* background: #fafafa; */
+    /* width: 20% !important; */
+}
+.badhan {
+    /* padding: 20px; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    width: 10px;
+}
+
+.badhan img {
+    max-width: 546px;
+    height: auto;
+    margin-top: -80px;
+}
+
+.p {
+    width: 600px;
+    color: #484847;
+}
