@@ -42,6 +42,14 @@
     /* border: 2px solid red; */
     margin: 0 auto;
 }
+.nav ul li a.active {
+    color: #000;
+    border-bottom: 2px solid #000;
+  }
+  .sidebar a.active {
+    color: #000;
+    border-bottom: 2px solid #000;
+  }
 
 .logo img {
     height: 100%;
