@@ -198,39 +198,7 @@
     </footer>
     <!-- footer part end  -->
 
-    <script>
-        const popup = document.getElementById('popup');
-        const popupImage = document.getElementById('popupImage');
-        const images = document.querySelectorAll('.box-container.right img');
-        let currentIndex = 0;
-
-        function openPopup(index) {
-            currentIndex = index;
-            popup.style.display = 'flex';
-            popupImage.src = images[index].src;
-        }
-
-        function closePopup() {
-            popup.style.display = 'none';
-        }
-
-        function changeImage(direction) {
-            currentIndex += direction;
-            if (currentIndex < 0) currentIndex = images.length - 1;
-            if (currentIndex >= images.length) currentIndex = 0;
-            popupImage.src = images[currentIndex].src;
-        }
-
-        function filterCategory(category) {
-            images.forEach(img => {
-                if (category === 'all' || img.classList.contains(category)) {
-                    img.style.display = 'inline-block';
-                } else {
-                    img.style.display = 'none';
-                }
-            });
-        }
-    </script>
+    
 </body>
 
 </html>

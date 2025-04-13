@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
   }
+  button.active {
+    background-color: #333;
+    color: #fff;
+  }
   body {
     margin: 0;
     font-family: 'AcuminPro,Regular', sans-serif;
@@ -79,3 +83,6 @@ button {
   .popup .next {
     right: 30px;
   }
+  img#image {
+    width: 245px;
+}

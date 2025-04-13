@@ -45,33 +45,70 @@
       <!-- Left Category Panel -->
       <div class="box-container left">
         <ul>
-            <button onclick="filterCategory('all')">Branding</button><br>
-            <button onclick="filterCategory('cat1')">Grafish</button><br>
-            <button onclick="filterCategory('cat2')">Office branding & wayfinding</button><br>
-            <button onclick="filterCategory('cat3')">Digital-UI/UX</button>
-        </ul>
+            <button onclick="setActive(this); filterCategory('all')">Branding</button><br>
+            <button onclick="setActive(this); filterCategory('cat1')">Grafish</button><br>
+            <button onclick="setActive(this); filterCategory('cat2')">Office branding & wayfinding</button><br>
+            <button onclick="setActive(this); filterCategory('cat3')">Digital-UI/UX</button>
+          </ul>
       </div>
 
       <!-- Right Image Gallery -->
       <div class="box-container right" id="gallery">
-        <img src="images/Rectangle 1.png" class="cat1" onclick="openPopup(0)">
-        <img src="images/Group 3 (2).png" class="cat1" onclick="openPopup(1)">
-        <img src="images/Group 4.png" class="cat2" onclick="openPopup(2)">
-        <img src="images/Group 5.png" class="cat2" onclick="openPopup(3)">
-        <img src="images/Group 6.png" class="cat3" onclick="openPopup(4)">
-        <img src="images/Group 7.png" class="cat3" onclick="openPopup(5)">
-        <img src="images/Group 8.png" class="cat1" onclick="openPopup(6)">
-        <img src="images/Group 9.png" class="cat2" onclick="openPopup(7)">
-        <img src="images/Group 10.png" class="cat3" onclick="openPopup(8)">
-        <img src="images/Group 5.png" class="cat1" onclick="openPopup(9)">
-        <img src="images/Rectangle 1.png" class="cat2" onclick="openPopup(10)">
-        <img src="images/Group 3 (2).png" class="cat3" onclick="openPopup(11)">
-        <img src="images/Group 4.png" class="cat1" onclick="openPopup(12)">
-        <img src="images/Group 5.png" class="cat2" onclick="openPopup(13)">
-        <img src="images/Group 9.png" class="cat3" onclick="openPopup(14)">
-        <img src="images/Group 6.png" class="cat1" onclick="openPopup(15)">
-        <img src="images/Group 7.png" class="cat2" onclick="openPopup(16)">
-        <img src="images/Group 8.png" class="cat3" onclick="openPopup(17)">
+        <a href="cetegory.html">
+        <img src="images/Rectangle 1.png" id="image" class="cat1" onclick="openPopup(0)">
+        </a>
+        <a href="cetegory.html">
+        <img src="images/Group 3 (2).png" id="image" class="cat1" onclick="openPopup(1)">
+        </a>
+        <a href="cetegory.html">
+        <img src="images/Group 4.png" id="image" class="cat2" onclick="openPopup(2)">
+        </a>
+        <a href="cetegory.html">
+        <img src="images/Group 5.png" id="image" class="cat2" onclick="openPopup(3)">
+        </a>
+        <a href="cetegory.html">
+        <img src="images/Group 6.png" id="image" class="cat3" onclick="openPopup(4)">
+        </a>
+        <a href="cetegory.html">
+        <img src="images/Group 7.png" id="image" class="cat3" onclick="openPopup(5)">
+        </a>
+        <a href="cetegory.html">
+        <img src="images/Group 8.png" id="image" class="cat1" onclick="openPopup(6)">
+        </a>
+        <a href="cetegory.html">
+
+        <img src="images/Group 9.png" id="image" class="cat2" onclick="openPopup(7)">
+        </a>
+        <a href="cetegory.html">
+        <img src="images/Group 10.png" id="image" class="cat3" onclick="openPopup(8)">
+        </a>
+        <a href="cetegory.html">
+        <img src="images/Group 5.png" id="image" class="cat1" onclick="openPopup(9)">
+        </a>
+        <a href="cetegory.html">
+        <img src="images/Rectangle 1.png" id="image" class="cat2" onclick="openPopup(10)">
+        </a>
+        <a href="cetegory.html">
+        <img src="images/Group 3 (2).png" id="image" class="cat3" onclick="openPopup(11)">
+        </a>
+        <a href="cetegory.html">
+        <img src="images/Group 4.png" id="image" class="cat1" onclick="openPopup(12)">
+        </a>
+        <a href="cetegory.html">
+        <img src="images/Group 5.png" id="image" class="cat2" onclick="openPopup(13)">
+        </a>
+        <a href="cetegory.html">
+        <img src="images/Group 9.png" id="image" class="cat3" onclick="openPopup(14)">
+        </a>
+        <a href="cetegory.html">
+        <img src="images/Group 6.png" id="image" class="cat1" onclick="openPopup(15)">
+        </a>
+        <a href="cetegory.html">
+        <img src="images/Group 7.png" id="image" class="cat2" onclick="openPopup(16)">
+        </a>
+        <a href="cetegory.html">
+        <img src="images/Group 8.png" id="image" class="cat3" onclick="openPopup(17)">
+        </a>
       </div>
     </div>
   </section>
@@ -148,6 +185,11 @@
         }
       });
     }
+    function setActive(element) {
+    const buttons = document.querySelectorAll("ul button");
+    buttons.forEach(btn => btn.classList.remove("active"));
+    element.classList.add("active");
+  }
   </script>
 </body>
 </html>
