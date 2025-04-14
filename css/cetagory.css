@@ -60,3 +60,103 @@ img.box-content-image-1 {
 a.top-a-color {
     color: black;
 }
+
+
+
+@media (max-width: 768px){
+
+    section {
+        display: flex;
+        justify-content: center;
+        padding: 80px;
+        background-color: #E9E8E8;
+    }
+    .wat-banner {
+        width: 360px;
+        /* border: 2px solid red; */
+        /* margin-top: -80px; */
+    }
+    .box-container.right {
+        width: 320px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 31px;
+        margin-left: -80px;
+        /* display: flex; */
+    }
+    .container {
+        width: 100%;
+        padding: 0px 20px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .box-container.left ul {
+        /* padding: 0px 20px; */
+        display: flex;
+        /* justify-content: center; */
+        position: absolute;
+        /* margin: 0 auto; */
+        /* align-items: center; */
+        width: 320px;
+        margin-left: -60px;
+        margin-top: 25px;
+    }
+    #container {
+        padding-top: 35px;
+    }
+
+    .box-head {
+        width: 100%;
+        height: 58px;
+        background: white;
+        /* align-items: center; */
+        margin-top: 80px;
+    }
+
+    .content {
+        font-size: 36px;
+        text-align: center;
+        line-height: 60px;
+    }
+
+    .top-button {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .box-p-content {
+        margin-top: 30px;
+    }
+
+    .box-content-p {
+        margin-top: 30px;
+        background: white;
+        padding: 20px 10px 20px 10px;
+    }
+
+    img.box-content-image {
+        margin-top: 30px;
+        width: 100% !important;
+    }
+
+    .box-image-content {
+        display: flex;
+        width: 801px !important;
+        gap: 30px;
+        margin-top: 30px;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    img.box-content-image-1 {
+        width: 365px !important;
+    }
+
+    .box-image-content-1 {
+        display: flex;
+        margin-top: 30px;
+        gap: 30px;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}

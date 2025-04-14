@@ -59,3 +59,65 @@ body {
     width: 600px;
     color: #484847;
 }
+
+@media (max-width: 1200px) {
+  .faisa {
+    width: 100%;
+    padding: 60px 40px;
+  }
+
+  .p {
+    width: 100%;
+  }
+
+  .badhan img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .faisa {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 20px;
+  }
+
+  .ahmd {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .shuvo {
+    padding: 20px 0;
+  }
+
+  .p {
+    width: 100%;
+    text-align: left;
+}
+
+  .badhan img {
+    margin-top: -40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .faisa {
+    padding: 20px 10px;
+  }
+
+  .ripon {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .badhan img {
+    margin-top: -20px;
+  }
+
+  .p {
+    font-size: 15px;
+  }
+}
