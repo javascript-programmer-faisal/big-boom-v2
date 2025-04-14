@@ -115,8 +115,9 @@ img#image {
   .box-container.left {
     text-align: center;
     margin-bottom: 20px;
-  }
-
+    margin: 0 auto;
+    margin-left: -20px;
+}
   .box-container.left ul {
     text-align: center;
     display: flex;
