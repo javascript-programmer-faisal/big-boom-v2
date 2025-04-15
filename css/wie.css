@@ -83,15 +83,15 @@ body {
   }
 
   .ahmd {
-    width: 100%;
-    flex-direction: row;
+    width: 50%;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .shuvo {
-    padding: 20px 0;
-  }
+    justify-content: left;
+    align-items: flex-start;
+}
+.shuvo {
+  padding: 23px 0px 0px 23px;
+}
 
   .p {
     width: 100%;
